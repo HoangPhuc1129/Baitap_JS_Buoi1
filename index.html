@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập nộp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Bài tập 1 -->
+    <strong class="container">Bài tập 1: Tính Lương Theo Ngày Làm Việc</strong>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Lương 1 ngày : 100.000đ</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Số Ngày Làm ?</label>
+                <input
+                  type="text"
+                  id="soNgayLam"
+                  class="form-control"
+                  placeholder="Nhập số ngày làm tại đây"
+                />
+              </div>
+              <button onclick="tinhToan()" class="btn btn-info mb-3">
+                Tính toán
+              </button>
+              <div class="form-group">
+                <label>Tổng Lương :</label>
+                <input type="text" id="tongLuong" class="form-control" />
+              </div>
+            </div>
+            <div class="card-footer" id="footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài tập 2 -->
+    <strong class="container"
+      >Bài tập 2: Tính Trung Bình Cộng Của 5 Số Thực</strong
+    >
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Tính trung bình cộng của 5 số thực :</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Số thực 1</label>
+                <input
+                  type="text"
+                  id="soThuc1"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số thực 2</label>
+                <input
+                  type="text"
+                  id="soThuc2"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số thực 3</label>
+                <input
+                  type="text"
+                  id="soThuc3"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số thực 4</label>
+                <input
+                  type="text"
+                  id="soThuc4"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Số thực 5:</label>
+                <input
+                  type="text"
+                  id="soThuc5"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <button onclick="trungBinhCong()" class="btn btn-warning mb-3">
+                Tính toán
+              </button>
+            </div>
+            <div class="card-footer" id="ketQua">Kết Quả :</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+    <!-- Bài Tập 3 -->
+    <strong class="container">Bài tập 3: Quy Đổi Tiền USD -> Tiền VND</strong>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">Giá USD : 23.500đ</div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Tiền USD</label>
+                <input
+                  type="text"
+                  id="tienUsd"
+                  class="form-control"
+                  placeholder="Nhập số ngày làm tại đây"
+                />
+              </div>
+              <button onclick="doiTien()" class="btn btn-secondary mb-2">
+                Quy Đổi
+              </button>
+            </div>
+            <div class="card-footer" id="tienVnd"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <!-- Bài Tập 4 -->
+    <strong class="container"
+      >Bài tập 4: Tính diện tích và chu vi hình chữ nhật</strong
+    >
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header">
+              Tính diện tích và chu vi hình chữ nhật :
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập Chiều Dài</label>
+                <input
+                  type="text"
+                  id="chieuDai"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <div class="form-group">
+                <label>Nhập Chiều Rộng</label>
+                <input
+                  type="text"
+                  id="chieuRong"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <button onclick="xuLi()" class="btn btn-primary mt-3 mb-2">
+                Tính Toán
+              </button>
+              <div class="form-group">
+                <label>Chu Vi</label>
+                <input type="text" id="chuVi" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label>Diện Tích</label>
+                <input type="text" id="dienTich" class="form-control" />
+              </div>
+            </div>
+            <div class="card-footer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <!-- Bài Tập 5 -->
+    <strong class="container"
+      >Bài tập 5: Viết Chương Trình Nhập Vào 1 Số Có 2 Chữ Số. Tính Tổng 2 Ký Số
+      Vừa Nhập</strong
+    >
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <div class="form-group">
+                <label>Nhập số bất kỳ có 2 chữ số :</label>
+                <input
+                  type="text"
+                  id="soTuNhien"
+                  class="form-control"
+                  placeholder="Nhập số tại đây"
+                />
+              </div>
+              <button onclick="process()" class="btn btn-dark mb-2">
+                Tính Toán
+              </button>
+            </div>
+            <div class="card-footer" id="result"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <hr />
+    <br />
+    <script src="./main.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
